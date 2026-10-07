@@ -2,7 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-Heartbeat_WaitForAll(unsigned long, bool) | coco_loco.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | coco_loco.so
 NetGlobals::GetScore(int) | coco_loco.so
 QueryPopup::Result() | coco_loco.so
@@ -12,15 +11,11 @@ QueryPopup::QueryPopup(float, float, float, char*, int, int, int, int, float, fl
 MouseManager::SetDebounce(int) | coco_loco.so
 MouseManager::Pop() | coco_loco.so
 MouseManager::Push() | coco_loco.so
-ContinueControl::display() | coco_loco.so
 USBIO::FoundUSB() | coco_loco.so
 NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | coco_loco.so
 NetTimer::NetClick(unsigned char) | coco_loco.so
 NetTimer::NetTimer(unsigned long, unsigned long, unsigned char, unsigned short, bool) | coco_loco.so
 NetTimer::~NetTimer() | coco_loco.so
-Profiler::DelInstance() | coco_loco.so
-Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | coco_loco.so
-Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | coco_loco.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | coco_loco.so
 SoundOGG::StopOGG(SoundOGG*) | coco_loco.so
 typeinfo for NetTimer | coco_loco.so
