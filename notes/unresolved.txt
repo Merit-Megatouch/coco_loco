@@ -2,7 +2,6 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | coco_loco.so
 NetGlobals::GetScore(int) | coco_loco.so
 QueryPopup::Result() | coco_loco.so
 QueryPopup::Activate() | coco_loco.so
