@@ -15,6 +15,4 @@ NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*
 NetTimer::NetClick(unsigned char) | coco_loco.so
 NetTimer::NetTimer(unsigned long, unsigned long, unsigned char, unsigned short, bool) | coco_loco.so
 NetTimer::~NetTimer() | coco_loco.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | coco_loco.so
-SoundOGG::StopOGG(SoundOGG*) | coco_loco.so
 typeinfo for NetTimer | coco_loco.so
