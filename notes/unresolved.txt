@@ -2,73 +2,18 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-NetGlob | coco_loco.so
-WhoWeArePlaying | coco_loco.so
-Debug_Flag_Set(char const*, char const*) | coco_loco.so
-GetHelpFileName(char (&) [255], char const*, Locale::Languages, char const*) | coco_loco.so
-ScreenIsTouched() | coco_loco.so
 Heartbeat_WaitForAll(unsigned long, bool) | coco_loco.so
-GetMyId() | coco_loco.so
-GetMaster() | coco_loco.so
-NetGlobals::ProcNetClicks() | coco_loco.so
 NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | coco_loco.so
 NetGlobals::GetScore(int) | coco_loco.so
 QueryPopup::Result() | coco_loco.so
 QueryPopup::Activate() | coco_loco.so
 QueryPopup::Finished() | coco_loco.so
 QueryPopup::QueryPopup(float, float, float, char*, int, int, int, int, float, float, char*, float, float, char*, float, float, float, float, char*, float, float, char*, char*, char*, float, float, char*, char*, char*, int, int, int, char*, char*, char*, int, int, unsigned long, char*, unsigned long, unsigned long, bool, unsigned short) | coco_loco.so
-Translator::nTranslate(char*, unsigned int, char const*) | coco_loco.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | coco_loco.so
-WorldClass::SetBack(short) | coco_loco.so
-WorldClass::DeleteBmp(Bitmap*, unsigned char) | coco_loco.so
-WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | coco_loco.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | coco_loco.so
-WorldClass::WorldClass() | coco_loco.so
-system_info::SystemInfo::GetInstance() | coco_loco.so
-system_info::SystemInfo::IsPlatformForce() | coco_loco.so
-system_info::Get_Motherboard_Type() | coco_loco.so
 MouseManager::SetDebounce(int) | coco_loco.so
 MouseManager::Pop() | coco_loco.so
 MouseManager::Push() | coco_loco.so
-NetSpriteLock::SendPacket(unsigned char) | coco_loco.so
-NetSpriteLock::SendPacketLock(unsigned char, unsigned long) | coco_loco.so
-NetSpriteLock::SendAck(unsigned char) | coco_loco.so
-NetSpriteLock::NetSpriteLock(Bitmap*, unsigned short, unsigned char, unsigned short) | coco_loco.so
-NetSpriteLock::~NetSpriteLock() | coco_loco.so
 ContinueControl::display() | coco_loco.so
-List::Push(Group*) | coco_loco.so
-List::List(List*) | coco_loco.so
-Books::Credits(xml_gameinfo::GameIds, enums::Span) | coco_loco.so
-Books::Instance() | coco_loco.so
 USBIO::FoundUSB() | coco_loco.so
-Bitmap::CopyFromScreen(int, int, bool) | coco_loco.so
-Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | coco_loco.so
-Bitmap::LoadTGA(char*, int) | coco_loco.so
-Bitmap::NextAnim() | coco_loco.so
-Sprite::DoNextFrame() | coco_loco.so
-Sprite::SpriteClick() | coco_loco.so
-Sprite::AssignString(String*, unsigned long) | coco_loco.so
-Sprite::ChangeString(char const*, unsigned long) | coco_loco.so
-Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | coco_loco.so
-Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | coco_loco.so
-Sprite::Reset() | coco_loco.so
-Sprite::DoDraw() | coco_loco.so
-Sprite::Enable(unsigned long) | coco_loco.so
-Sprite::FadeIn(unsigned long, unsigned long, int, int) | coco_loco.so
-Sprite::SetBmp(Bitmap*, unsigned long) | coco_loco.so
-Sprite::SetRGB(int, int, int, unsigned long) | coco_loco.so
-Sprite::Signal(Group::SpriteSignalType) | coco_loco.so
-Sprite::Signal(SpriteSignal*) | coco_loco.so
-Sprite::Disable(unsigned long, bool) | coco_loco.so
-Sprite::FadeOut(unsigned long, unsigned long, int, int) | coco_loco.so
-Sprite::Message(Group::SpriteSignalType) | coco_loco.so
-Sprite::Message(SpriteSignal*) | coco_loco.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | coco_loco.so
-Sprite::SetCord(float, float, float, unsigned long) | coco_loco.so
-Sprite::SetSize(int, int) | coco_loco.so
-Sprite::DoCommand(int) | coco_loco.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | coco_loco.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | coco_loco.so
 NetTimer::InstallCallBackFxn(unsigned char, void*, void (*)(unsigned long, void*)) | coco_loco.so
 NetTimer::NetClick(unsigned char) | coco_loco.so
 NetTimer::NetTimer(unsigned long, unsigned long, unsigned char, unsigned short, bool) | coco_loco.so
@@ -78,6 +23,4 @@ Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<ch
 Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | coco_loco.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | coco_loco.so
 SoundOGG::StopOGG(SoundOGG*) | coco_loco.so
-typeinfo for NetSpriteLock | coco_loco.so
 typeinfo for NetTimer | coco_loco.so
-vtable for DOSLinuxWorld | coco_loco.so
